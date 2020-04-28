@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="FavoritesContentCell" rowHeight="74" id="KGk-i7-Jjw" customClass="FavoritesContentCell" customModule="iTunesDemoApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="362" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="362" height="74"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h0p-If-fX1">
+                        <rect key="frame" x="4" y="4" width="358" height="75"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music.note" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1Gd-eE-ry4">
+                                <rect key="frame" x="0.0" y="0.5" width="70" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="47U-qX-jtu"/>
+                                    <constraint firstAttribute="width" constant="70" id="rXe-qf-Zku"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="18b-M0-34x" userLabel="Artwork Detail View">
+                                <rect key="frame" x="70" y="0.0" width="288" height="70"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="dxG-WZ-ymW">
+                                        <rect key="frame" x="8" y="8" width="210" height="54"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KtV-H2-nkx">
+                                                <rect key="frame" x="0.0" y="0.0" width="92" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Primary Genre Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zU9-wu-W49">
+                                                <rect key="frame" x="0.0" y="18" width="117" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Link To iTunes" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="owQ-NW-37O">
+                                                <rect key="frame" x="0.0" y="36" width="80.5" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="dxG-WZ-ymW" secondAttribute="bottom" constant="8" id="4bR-4G-CLy"/>
+                                    <constraint firstItem="dxG-WZ-ymW" firstAttribute="centerY" secondItem="18b-M0-34x" secondAttribute="centerY" id="7go-1c-YBc"/>
+                                    <constraint firstItem="dxG-WZ-ymW" firstAttribute="top" secondItem="18b-M0-34x" secondAttribute="top" constant="8" id="Huc-AQ-0Ey"/>
+                                    <constraint firstItem="dxG-WZ-ymW" firstAttribute="leading" secondItem="18b-M0-34x" secondAttribute="leading" constant="8" id="dZ6-5v-H7y"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="75" id="4a8-aW-jFK"/>
+                        </constraints>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rmi-hk-p2W">
+                        <rect key="frame" x="312" y="19.5" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="Blf-6D-hsT"/>
+                            <constraint firstAttribute="width" constant="35" id="ocs-44-5Vy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="Button" image="heart" catalog="system">
+                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                        </state>
+                        <connections>
+                            <action selector="favoritesButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="IeD-is-Lxo"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="h0p-If-fX1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="EfN-cX-U6O"/>
+                    <constraint firstAttribute="trailing" secondItem="h0p-If-fX1" secondAttribute="trailing" id="MOG-aE-zS4"/>
+                    <constraint firstItem="h0p-If-fX1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="Wg9-IU-fTS"/>
+                    <constraint firstAttribute="bottom" secondItem="h0p-If-fX1" secondAttribute="bottom" constant="4" id="YvF-A3-msU"/>
+                    <constraint firstAttribute="trailing" secondItem="Rmi-hk-p2W" secondAttribute="trailing" constant="15" id="aph-Mz-7pf"/>
+                    <constraint firstItem="Rmi-hk-p2W" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hYf-4n-Vi2"/>
+                    <constraint firstAttribute="bottom" secondItem="Rmi-hk-p2W" secondAttribute="bottom" constant="19.5" id="lRW-JL-HXa"/>
+                    <constraint firstItem="Rmi-hk-p2W" firstAttribute="leading" secondItem="dxG-WZ-ymW" secondAttribute="trailing" constant="20" id="rKz-eD-NIt"/>
+                    <constraint firstItem="Rmi-hk-p2W" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19.5" id="wCC-gh-lYc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="artworkImg" destination="1Gd-eE-ry4" id="n58-jk-UrJ"/>
+                <outlet property="favoritesButton" destination="Rmi-hk-p2W" id="V28-g1-GYC"/>
+                <outlet property="genreLabel" destination="zU9-wu-W49" id="VLd-an-1kq"/>
+                <outlet property="itunesLink" destination="owQ-NW-37O" id="cnH-NJ-8iR"/>
+                <outlet property="trackName" destination="KtV-H2-nkx" id="YTS-WR-5u3"/>
+            </connections>
+            <point key="canvasLocation" x="168.11594202898553" y="145.98214285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="heart" catalog="system" width="64" height="54"/>
+        <image name="music.note" catalog="system" width="48" height="64"/>
+    </resources>
+</document>

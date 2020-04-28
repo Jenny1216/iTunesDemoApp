@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A4q-ix-CMo">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Favorites View Controller-->
+        <scene sceneID="YJu-z8-LoL">
+            <objects>
+                <viewController id="Am4-x0-FXb" customClass="FavoritesViewController" customModule="iTunesDemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8fn-rZ-Eix">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3IY-6a-qTv">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3IY-6a-qTv" firstAttribute="top" secondItem="izf-N9-9Jf" secondAttribute="top" id="63U-rF-Lmr"/>
+                            <constraint firstItem="3IY-6a-qTv" firstAttribute="centerX" secondItem="8fn-rZ-Eix" secondAttribute="centerX" id="9Fx-S8-FZX"/>
+                            <constraint firstItem="3IY-6a-qTv" firstAttribute="bottom" secondItem="izf-N9-9Jf" secondAttribute="bottom" id="HcK-cr-HbZ"/>
+                            <constraint firstItem="3IY-6a-qTv" firstAttribute="trailing" secondItem="izf-N9-9Jf" secondAttribute="trailing" id="aBg-UU-vbu"/>
+                            <constraint firstItem="3IY-6a-qTv" firstAttribute="leading" secondItem="izf-N9-9Jf" secondAttribute="leading" id="jvF-ZH-Vme"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="izf-N9-9Jf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="O6M-cZ-BW6"/>
+                    <connections>
+                        <outlet property="tableView" destination="3IY-6a-qTv" id="Gn9-EA-XYS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sgI-Ff-fOb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="842.02898550724649" y="113.83928571428571"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="Ywa-wb-I8H">
+            <objects>
+                <viewController id="6JH-Va-n5g" customClass="SearchViewController" customModule="iTunesDemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SYf-g0-aFL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Aby-X3-4X1">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Artists, Songs, and More" id="YOu-e4-Xqn">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                                </searchBar>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Aby-X3-4X1" firstAttribute="leading" secondItem="pD2-Gz-IkO" secondAttribute="leading" id="2s2-36-wUp"/>
+                            <constraint firstItem="Aby-X3-4X1" firstAttribute="trailing" secondItem="pD2-Gz-IkO" secondAttribute="trailing" id="PZZ-cx-UFX"/>
+                            <constraint firstItem="Aby-X3-4X1" firstAttribute="centerX" secondItem="SYf-g0-aFL" secondAttribute="centerX" id="TRm-IB-z93"/>
+                            <constraint firstItem="Aby-X3-4X1" firstAttribute="bottom" secondItem="pD2-Gz-IkO" secondAttribute="bottom" id="fMz-GL-f3d"/>
+                            <constraint firstItem="Aby-X3-4X1" firstAttribute="top" secondItem="pD2-Gz-IkO" secondAttribute="top" id="xr4-TL-RKr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pD2-Gz-IkO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GKd-F0-jh7"/>
+                    <connections>
+                        <outlet property="searchBar" destination="YOu-e4-Xqn" id="dmP-7E-440"/>
+                        <outlet property="tableView" destination="Aby-X3-4X1" id="ytU-yK-3VH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nUl-rm-cve" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="842.02898550724649" y="-534.375"/>
+        </scene>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="Rj4-sy-GhV">
+            <objects>
+                <tabBarController id="A4q-ix-CMo" customClass="TabBarViewController" customModule="iTunesDemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tub-go-Lf9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="wNe-Kb-quC" kind="relationship" relationship="viewControllers" id="pTZ-sl-rZN"/>
+                        <segue destination="Cye-jJ-fiM" kind="relationship" relationship="viewControllers" id="pve-18-hIw"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jz2-gw-8gS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-985" y="-210"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="oeG-fh-Zff">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wNe-Kb-quC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="Fpn-ut-iXd"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sWk-ni-BnE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6JH-Va-n5g" kind="relationship" relationship="rootViewController" id="iKX-Ni-cSO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wnk-e0-sF8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-68.115942028985515" y="-534.375"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="7db-sh-FBK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cye-jJ-fiM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favorites" image="heart.fill" catalog="system" id="Lva-ug-yyM"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VT4-ir-kcD">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Am4-x0-FXb" kind="relationship" relationship="rootViewController" id="Ick-VN-ILf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e1Z-fO-uVm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-68.115942028985515" y="113.83928571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart.fill" catalog="system" width="64" height="54"/>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+    </resources>
+</document>
