@@ -13,7 +13,7 @@ protocol SearchContentCellDelegate: class {
 }
 
 class SearchContentCell: UITableViewCell {
-
+    
     var artist: Artist?
     
     weak var delegate: SearchContentCellDelegate?
@@ -27,11 +27,10 @@ class SearchContentCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
     

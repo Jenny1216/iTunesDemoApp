@@ -18,7 +18,6 @@
 		174D1F2C2456002F004B7E09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174D1F2B2456002F004B7E09 /* AppDelegate.swift */; };
 		174D1F2E2456002F004B7E09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174D1F2D2456002F004B7E09 /* SceneDelegate.swift */; };
 		174D1F332456002F004B7E09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174D1F312456002F004B7E09 /* Main.storyboard */; };
-		174D1F362456002F004B7E09 /* iTunesDemoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 174D1F342456002F004B7E09 /* iTunesDemoApp.xcdatamodeld */; };
 		174D1F3824560030004B7E09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 174D1F3724560030004B7E09 /* Assets.xcassets */; };
 		174D1F3B24560030004B7E09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174D1F3924560030004B7E09 /* LaunchScreen.storyboard */; };
 		174D1F432456044B004B7E09 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174D1F422456044B004B7E09 /* FavoritesViewController.swift */; };
@@ -39,7 +38,6 @@
 		174D1F2B2456002F004B7E09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		174D1F2D2456002F004B7E09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		174D1F322456002F004B7E09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		174D1F352456002F004B7E09 /* iTunesDemoApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iTunesDemoApp.xcdatamodel; sourceTree = "<group>"; };
 		174D1F3724560030004B7E09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		174D1F3A24560030004B7E09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		174D1F3C24560030004B7E09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +57,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		171DD06B2457E00600560848 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				174D1F312456002F004B7E09 /* Main.storyboard */,
+				174D1F3924560030004B7E09 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		171DD06C2457E01C00560848 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				174D1F2B2456002F004B7E09 /* AppDelegate.swift */,
+				174D1F2D2456002F004B7E09 /* SceneDelegate.swift */,
+				174D1F3724560030004B7E09 /* Assets.xcassets */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		171DD06D2457E03F00560848 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				1739DB7A2456787100EFED51 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		1739DB792456407D00EFED51 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,18 +131,14 @@
 		174D1F2A2456002F004B7E09 /* iTunesDemoApp */ = {
 			isa = PBXGroup;
 			children = (
-				1739DB7A2456787100EFED51 /* Constants.swift */,
 				1739DB812456853E00EFED51 /* Services */,
+				171DD06D2457E03F00560848 /* Constants */,
 				1739DB7C245683D800EFED51 /* Model */,
+				171DD06B2457E00600560848 /* View */,
 				174D1F4624560471004B7E09 /* Controllers */,
 				1739DB792456407D00EFED51 /* Cell */,
-				174D1F2B2456002F004B7E09 /* AppDelegate.swift */,
-				174D1F2D2456002F004B7E09 /* SceneDelegate.swift */,
-				174D1F312456002F004B7E09 /* Main.storyboard */,
-				174D1F3724560030004B7E09 /* Assets.xcassets */,
-				174D1F3924560030004B7E09 /* LaunchScreen.storyboard */,
+				171DD06C2457E01C00560848 /* Support Files */,
 				174D1F3C24560030004B7E09 /* Info.plist */,
-				174D1F342456002F004B7E09 /* iTunesDemoApp.xcdatamodeld */,
 			);
 			path = iTunesDemoApp;
 			sourceTree = "<group>";
@@ -209,7 +230,6 @@
 				174D1F4524560460004B7E09 /* SearchViewController.swift in Sources */,
 				1739DB7E245683EC00EFED51 /* Feed.swift in Sources */,
 				1739DB732456357800EFED51 /* FavoritesContentCell.swift in Sources */,
-				174D1F362456002F004B7E09 /* iTunesDemoApp.xcdatamodeld in Sources */,
 				1739DB772456359500EFED51 /* SearchContentCell.swift in Sources */,
 				174D1F2C2456002F004B7E09 /* AppDelegate.swift in Sources */,
 				174D1F432456044B004B7E09 /* FavoritesViewController.swift in Sources */,
@@ -292,7 +312,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -346,7 +366,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -414,19 +434,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		174D1F342456002F004B7E09 /* iTunesDemoApp.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				174D1F352456002F004B7E09 /* iTunesDemoApp.xcdatamodel */,
-			);
-			currentVersion = 174D1F352456002F004B7E09 /* iTunesDemoApp.xcdatamodel */;
-			path = iTunesDemoApp.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 174D1F202456002F004B7E09 /* Project object */;
 }

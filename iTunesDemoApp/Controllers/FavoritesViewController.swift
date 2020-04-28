@@ -12,7 +12,7 @@ class FavoritesViewController: UIViewController {
     
     var favoritesArray = [Artist]()
     var label = UILabel()
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -33,9 +33,9 @@ class FavoritesViewController: UIViewController {
             label.isHidden = false
             label.text = "Your favorites will appear here."
             label.textColor = .systemGray
-            label.heightAnchor.constraint(equalToConstant: 50)
-            label.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0)
-            label.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0)
+            _ = label.heightAnchor.constraint(equalToConstant: 50)
+            _ = label.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0)
+            _ = label.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0)
             label.textAlignment = .center
             self.tableView.backgroundView = label
         }
